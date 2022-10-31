@@ -44,10 +44,10 @@ namespace WindowsApp2
             empleado1.Titulo = "Contador";
             empleado1.FechaIngreso = new DateTime(2020,10,8);
 
-            empleado1.Nombre = "Maria";
-            empleado1.Apellido = "Lopez";
-            empleado1.Titulo = "Programadora";
-            empleado1.FechaIngreso = new DateTime(2018, 8, 10);
+            empleado2.Nombre = "Maria";
+            empleado2.Apellido = "Lopez";
+            empleado2.Titulo = "Programadora";
+            empleado2.FechaIngreso = new DateTime(2018, 8, 10);
 
             Venta venta1 = new Venta();
             Venta venta2 = new Venta();
@@ -94,6 +94,14 @@ namespace WindowsApp2
             titulo1.Precio = 2500;
             titulo1.Notas = "Agotado";
 
+
+            MessageBox.Show($"Autores :\n\nAutor1\nNombre : {autor1.Nombre}\nApellido : {autor1.Apellido}\nFecha de Nacimiento : {autor1.FechaNacimiento}\n" +
+                $"Domicilio : {autor1.Domicilio}\nCiudad : {autor1.Ciudad}\nPais : {autor1.Pais}\n\nAutor2\nNombre : {autor2.Nombre}\nApellido : {autor2.Apellido}\n" +
+                $"Fecha de Nacimiento : {autor2.FechaNacimiento}\nDomicilio : {autor2.Domicilio}\nCiudad : {autor2.Ciudad}\nPais : {autor2.Pais}");
+
+            MessageBox.Show($"Empleados\n\nEmpleado 1:\nNombre : {empleado1.Nombre}\nApellido : {empleado1.Apellido}\nTitulo : {empleado1.Titulo}\n" +
+                $"Fecha de Ingreso : {empleado1.FechaIngreso}\n\nEmpleado 2:\nNombre: {empleado2.Nombre}\nApellido: {empleado2.Apellido}\n" +
+                $"Titulo : {empleado2.Titulo}\nFecha de Ingreso : {empleado2.FechaIngreso}");
         }
     }
 }
