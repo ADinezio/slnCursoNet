@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace WindowsApp2.Entidades
 {
-    public class Remito
+    public class Remito:Administracion
     {
-        public string Numero { get; set; }
-        public DateTime Fecha { get; set; }
-        public string Cliente { get; set; }
-        public string Direccion { get; set; }
-        public string CondicionIVA { get; set; }
-        public string CondicionVenta { get; set; }
-        public string Detalle { get; set; }
+        #region constructores
+        public Remito(DateTime fechaEntrega , string numero, DateTime fecha, string cliente, string direccion, string condicionIVA, string condicionVenta, string detalle, decimal total) : base(numero, fecha, cliente, direccion, condicionIVA, condicionVenta, detalle, total)
+        {
+            FechaEntrega = fechaEntrega;
+        }
+        #endregion
+
+        #region propiedades
         public DateTime FechaEntrega { get; set; }
-        public decimal Total { get; set; }
+
+        #endregion
+        
     }
 }
 

@@ -51,11 +51,12 @@
     <Compile Include="Entidades2\Publicador.cs" />
     <Compile Include="Entidades2\Titulo.cs" />
     <Compile Include="Entidades2\Venta.cs" />
-    <Compile Include="Entidades\ClienteEmpresa.cs" />
+    <Compile Include="Entidades\Administracion.cs" />
     <Compile Include="Entidades\ClienteIndividuo.cs" />
+    <Compile Include="Entidades\Empresa.cs" />
     <Compile Include="Entidades\Factura.cs" />
+    <Compile Include="Entidades\Persona.cs" />
     <Compile Include="Entidades\Producto.cs" />
-    <Compile Include="Entidades\Proveedor.cs" />
     <Compile Include="Entidades\Remito.cs" />
     <Compile Include="Entidades\Vendedor.cs" />
     <Compile Include="Form1.cs">
